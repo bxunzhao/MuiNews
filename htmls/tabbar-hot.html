@@ -66,15 +66,15 @@
 						console.log(data.data[0].title);
 						var table = document.body.querySelector('.mui-table-view');
 						var cells = document.body.querySelectorAll('.mui-table-view-cell');
-						for (var i = 0; i < 10; i++) {
+						for (var i = 0; i < 20; i++) {
 							var li = document.createElement('li');
-							var liC= document.createElement("li");
 							li.className = 'mui-table-view-cell';
-							li.innerHTML = '<a class="mui-navigate-right"> ' + data.data[i].title+ '</a>';
-							liC.className = 'mui-table-view-cell';
-							liC.innerHTML='<a class="mui-navigate-right"> ' + data.data[i].sourcename+ '</a>';
+							li.innerHTML = '<a>' 
+							+ '<img class="mui-media-object mui-pull-left" src="'+data.data[i].thumbnail + '">'
+							+ '<div">'+ data.data[i].title
+							+ '<p class="mui-ellipsis">' + data.data[i].sourcename 
+							+'</p></div></a>';
 							table.appendChild(li);
-//							table.appendChild(liC);
 						}
 						
 					},
@@ -96,7 +96,7 @@
 //					for (var i = cells.length, len = i + 20; i < len; i++) {
 //						var li = document.createElement('li');
 //						li.className = 'mui-table-view-cell';
-//						li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+//						li.innerHTML = '<a class=">Item ' + (i + 1) + '</a>';
 //						table.appendChild(li);
 //					}
 					page++;
@@ -130,8 +130,16 @@
 		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
 			<div class="mui-scroll">
 				<!--数据列表-->
-				<ul class="mui-table-view mui-table-view-chevron">
-					
+				<ul class="mui-table-view mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img id="ul-li-img" class="mui-media-object mui-pull-left" src="../images/60x60.gif">
+							<div class="mui-media-body">
+								远眺
+								<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+							</div>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
