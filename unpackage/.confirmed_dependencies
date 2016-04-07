@@ -1,0 +1,80 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"htmls/home.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"images/60x60.gif",
+			"css/app.css",
+			"htmls/tabbar-hot.html",
+			"htmls/tabbar-rec.html"
+		],
+		"refer": [
+			"htmls/guide.html",
+			"htmls/pullrefresh_main.html",
+			"htmls/template.html",
+			"htmls/tab-webview-main.html",
+			"htmls/tabbar-my.html",
+			"htmls/tabbar-sub.html",
+			"htmls/tabbar-hot.html",
+			"htmls/tabbar-rec.html"
+		]
+	},
+	"htmls/pullrefresh_main.html": {
+		"resources": [
+			"htmls/pullrefresh_sub.html",
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"htmls/pullrefresh_sub.html"
+		]
+	},
+	"htmls/tab-webview-main.html": {
+		"resources": [
+			"htmls/tab-webview-subpage-about.html"
+		],
+		"refer": [
+			"htmls/tab-webview-subpage-contact.html",
+			"htmls/tab-webview-subpage-setting.html",
+			"htmls/tab-webview-subpage-chat.html",
+			"htmls/tab-webview-subpage-about.html"
+		]
+	},
+	"htmls/tab-webview-subpage-contact.html": {
+		"resources": [
+			"images/60x60.gif"
+		]
+	},
+	"htmls/tabbar-my.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"htmls/pullrefresh_sub.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"htmls/tabbar-hot.html": {
+		"resources": [
+			"htmls/pullrefresh_sub.html",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"htmls/pullrefresh_sub.html"
+		]
+	}
+}
